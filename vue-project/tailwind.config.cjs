@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx, cjs}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'Poppins': ['Poppins'],
+      }
+    },
   },
   plugins: [],
 }

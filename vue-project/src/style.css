@@ -1,3 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.nav-links ul li a {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffce2c;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-links ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  header {
+    background-image: url(assets/img/pexels-miguel-á-padriñán-194096.jpg);
+    background-size: cover;
+  }
+
+/* Hamburger Menu */
+.mobile-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 50px;
+    transform-origin: center;
+    cursor: pointer;
+  }
+
+.mobile-btn .bar {
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: #525252;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+  }
+
+  .mobile-btn .bar::before,
+  .mobile-btn .bar::after
+   {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: #ffce2c;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+  }
+
+  .mobile-btn .bar::before{
+    transform: translateY(-10px);
+  }
+
+  .mobile-btn .bar::after{
+    transform: translateY(10px);
+  }
+
+  .mobile-btn.mobile-open .bar{
+    background: transparent;
+  }
+
+  .mobile-btn.mobile-open .bar::before {
+    transform: rotate(45deg);
+  }
+
+  .mobile-btn.mobile-open .bar::after {
+    background-color: #525252;
+    transform: rotate(-45deg);
+  }
+
+  /* End of hamburger menu */
