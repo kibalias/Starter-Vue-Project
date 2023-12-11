@@ -16,3 +16,6 @@ Starter Project to build portfolio and learn VueJS
 ```
 > npm run dev
 ```
+
+# Stock Photos Used (Attrition)
+1. Background - Photo by Miguel Á. Padriñán: https://www.pexels.com/photo/gray-and-brown-concrete-brick-wall-194096/
