@@ -4,6 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --rose: #D4B2A7;
+  --latte: #A38F85;
+  --toned-latte: #6d3b2069;
+  --nude: #e7d7c9;
+  --ivory: #ede9e3;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -135,6 +143,12 @@ section {
     width: 100%;
     object-fit: contain;
     transform: translateZ(-5px) scale(1.5);
+}
+
+/* About Me */
+
+.aboutMe-section {
+  background-color: var(--nude);
 }
 
 @media (width > 768px){
