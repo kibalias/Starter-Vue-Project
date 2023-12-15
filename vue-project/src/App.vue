@@ -8,12 +8,13 @@ import About from './views/AboutMe.vue'
 </script>
 
 <template>
-  <header class="h-screen">
+  <div class="wrapper">
     <Navbar />
-    <Home />
-  </header>
-    <About />
-  <Footer />
+      <Home />
+      <About />
+    <Footer />
+  </div>
+
     <!-- <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/about">About</RouterLink>
   <RouterView /> -->

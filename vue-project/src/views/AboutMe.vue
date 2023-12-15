@@ -7,7 +7,7 @@ const icons = ['vscode-icons:file-type-html', 'vscode-icons:file-type-css', 'log
 </script>
 
 <template>
-    <section class="aboutMe-section grid lg:grid-cols-12 grid-cols-1 gap-4 lg:mx-10 mx-8 bg-palette-500 lg:py-32 md:py-24 py-20 text-lg" id="about">
+    <section class="aboutMe-section grid lg:grid-cols-12 grid-cols-1 gap-4 lg:px-10 px-8 bg-palette-500 lg:py-32 md:py-24 py-20 text-lg" id="about">
     <div class="left-side lg:col-start-1 lg:col-end-8 lg:pl-20 lg:pr-16 text-justify lg:order-1 order-2">
         <p class="text-palette-300">{{ aboutText }} </p>
 

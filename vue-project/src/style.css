@@ -37,7 +37,7 @@ html{
   }
 
   header {
-    background-image: url(assets/img/pexels-miguel-á-padriñán-194096.jpg);
+    /* background-image: url(assets/img/pexels-miguel-á-padriñán-194096.jpg); */
     background-size: cover;
   }
 
@@ -96,3 +96,56 @@ html{
   }
 
   /* End of hamburger menu */
+
+section {
+  background-color: white;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.parallax-holder {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.foreground,
+.background {
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+}
+
+.background {
+    width: 100%;
+    object-fit: cover;
+    transform: translateZ(-10px) scale(2);
+}
+.foreground {
+    right: 0;
+    width: 100%;
+    object-fit: contain;
+    transform: translateZ(-5px) scale(1.5);
+}
+
+@media (width > 768px){
+    .home-text {
+      position: absolute;
+      left: 0;
+      width: 50%;
+    }
+
+    .foreground {
+      transform: translateX(5%) translateY(5%);
+      width: 50%;
+    }
+}
